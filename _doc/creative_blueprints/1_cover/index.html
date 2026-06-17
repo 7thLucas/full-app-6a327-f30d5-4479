@@ -1,0 +1,62 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-visual { display: flex; }
+.mode-portrait .sl-visual { display: none; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full p-10 gap-10">
+
+    <!-- Left: content column -->
+    <div class="flex flex-col justify-between flex-1 min-w-0">
+      <div class="flex flex-col gap-6">
+        <!-- Eyebrow chip -->
+        <span class="inline-block self-start bg-indigo-100 text-indigo-700 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full">
+          Brand Landing Page
+        </span>
+
+        <!-- Headline -->
+        <div>
+          <h1 class="text-7xl font-black text-slate-900 leading-none tracking-tight">
+            Hello,
+          </h1>
+          <h1 class="text-7xl font-black leading-none tracking-tight bg-gradient-to-r from-purple-600 to-indigo-500 bg-clip-text text-transparent">
+            QuantumByte.
+          </h1>
+        </div>
+
+        <!-- Tagline -->
+        <p class="text-lg text-slate-500 font-medium leading-relaxed max-w-xs">
+          Two sections. One statement.<br>A brand worth loving.
+        </p>
+
+        <!-- Divider accent -->
+        <div class="w-12 h-1 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500"></div>
+
+        <!-- Sub-copy -->
+        <p class="text-sm text-slate-400 leading-relaxed max-w-xs">
+          A celebratory first impression for the QuantumByte community — warm, bold, and unmistakably on-brand.
+        </p>
+      </div>
+
+      <!-- Attribution -->
+      <div class="mt-auto pt-6">
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: visual anchor -->
+    <div class="sl-visual flex-1 rounded-3xl overflow-hidden relative">
+      <img
+        src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=abstract%20deep%20purple%20indigo%20dark%20glowing%20energy%20quantum%20particle%20burst%20floating%20hearts%20love%20minimal%20premium%20editorial"
+        class="w-full h-full object-cover"
+        alt="QuantumByte visual"
+      />
+      <!-- Love icon overlay -->
+      <div class="absolute bottom-6 right-6 flex gap-2 text-2xl opacity-80">
+        <span>❤️</span><span>💜</span><span>💙</span>
+      </div>
+    </div>
+
+  </div>
+</section>
