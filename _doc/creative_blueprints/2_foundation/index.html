@@ -1,0 +1,58 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-visual { display: flex; }
+.mode-portrait .sl-visual { display: none; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full p-10 gap-10">
+
+    <!-- Left: problem + solution -->
+    <div class="flex flex-col justify-center flex-1 min-w-0 gap-8">
+
+      <!-- Section label -->
+      <span class="inline-block self-start bg-slate-100 text-slate-500 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full">
+        Foundation
+      </span>
+
+      <!-- Problem -->
+      <div class="rounded-2xl border border-red-100 bg-red-50 p-6">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-red-500 text-lg">⚠</span>
+          <span class="text-xs font-bold text-red-500 tracking-widest uppercase">The Problem</span>
+        </div>
+        <h2 class="text-2xl font-bold text-slate-900 leading-snug mb-2">
+          Most brand pages are cluttered, cold, and forgettable.
+        </h2>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Visitors land and bounce. There's no warmth, no personality, no clear sense of who you are or why they should care. First impressions are wasted.
+        </p>
+      </div>
+
+      <!-- Solution -->
+      <div class="rounded-2xl bg-gradient-to-br from-purple-600 to-indigo-600 p-6">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-purple-200 text-lg">✦</span>
+          <span class="text-xs font-bold text-purple-200 tracking-widest uppercase">The Solution</span>
+        </div>
+        <h2 class="text-2xl font-bold text-white leading-snug mb-2">
+          A single-focus, celebration-first page that says who QuantumByte is — loud and warm.
+        </h2>
+        <p class="text-sm text-purple-200 leading-relaxed">
+          Two sections. Zero friction. Pure brand energy — a hero that greets, and a love note that resonates.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Right: supporting visual -->
+    <div class="sl-visual flex-1 rounded-3xl overflow-hidden">
+      <img
+        src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=warm%20inviting%20brand%20landing%20page%20concept%20purple%20indigo%20love%20hearts%20minimalist%20editorial%20dark%20background%20glow"
+        class="w-full h-full object-cover"
+        alt="Foundation visual"
+      />
+    </div>
+
+  </div>
+</section>
