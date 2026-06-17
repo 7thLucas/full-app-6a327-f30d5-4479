@@ -1,0 +1,89 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10 gap-6">
+
+    <!-- Header -->
+    <div class="flex items-start justify-between">
+      <div>
+        <span class="inline-block bg-amber-100 text-amber-700 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-2">
+          North Star
+        </span>
+        <h2 class="text-3xl font-black text-slate-900">Weekly Verified Operations</h2>
+        <p class="text-slate-500 text-sm mt-1">The number this page lives or dies by — once a conversion action exists.</p>
+      </div>
+      <span class="bg-amber-50 border border-amber-200 text-amber-700 text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">
+        Projected impact — based on your inputs
+      </span>
+    </div>
+
+    <!-- Operation definition -->
+    <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+      <span class="text-xs font-bold text-slate-400 tracking-widest uppercase block mb-3">Verified Operation — Define Yours</span>
+      <p class="text-slate-700 text-sm leading-relaxed mb-3">
+        A <strong>verified operation</strong> is a domain event completed by a real visitor. Clicks and page views never count. For this landing page, the operation depends on the next feature you add:
+      </p>
+      <div class="flex flex-wrap gap-2">
+        <span class="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1.5 rounded-full">e.g. Contact form submitted</span>
+        <span class="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1.5 rounded-full">e.g. Newsletter signup completed</span>
+        <span class="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1.5 rounded-full">e.g. Demo request sent</span>
+        <span class="bg-slate-200 text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full italic">No CTA exists yet — add one to unlock this metric</span>
+      </div>
+    </div>
+
+    <!-- WVO formula (all assumptions) -->
+    <div class="grid grid-cols-2 gap-4 flex-1">
+
+      <div class="rounded-2xl border border-amber-100 bg-amber-50 p-5 flex flex-col gap-3">
+        <span class="text-xs font-bold text-amber-600 tracking-widest uppercase">WVO Formula (template)</span>
+        <div class="font-mono text-sm text-slate-700 leading-relaxed space-y-1">
+          <div class="flex items-center gap-2">
+            <span class="bg-amber-200 text-amber-800 text-xs px-2 py-0.5 rounded font-semibold">Assumption — adjust this</span>
+            <span>Daily visitors: <strong>?</strong></span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-amber-200 text-amber-800 text-xs px-2 py-0.5 rounded font-semibold">Assumption — adjust this</span>
+            <span>Conversion rate: <strong>?%</strong></span>
+          </div>
+          <div class="border-t border-amber-200 pt-2 mt-2 text-slate-800 font-semibold">
+            ? visitors/day × ?% × 7 = <span class="text-amber-700">? WVO / week</span>
+          </div>
+        </div>
+        <p class="text-xs text-amber-600 mt-auto">Fill in your traffic analytics once the page is live and a CTA is active.</p>
+      </div>
+
+      <div class="rounded-2xl bg-gradient-to-br from-purple-600 to-indigo-600 p-5 flex flex-col gap-3">
+        <span class="text-xs font-bold text-purple-200 tracking-widest uppercase">Value Per Operation (template)</span>
+        <div class="font-mono text-sm text-purple-100 leading-relaxed space-y-1">
+          <div class="flex items-center gap-2">
+            <span class="bg-purple-800/50 text-purple-300 text-xs px-2 py-0.5 rounded font-semibold">Assumption</span>
+            <span>Value per lead: <strong>?</strong></span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-purple-800/50 text-purple-300 text-xs px-2 py-0.5 rounded font-semibold">Assumption</span>
+            <span>Close rate: <strong>?%</strong></span>
+          </div>
+          <div class="border-t border-purple-500 pt-2 mt-2 text-white font-semibold">
+            ? WVO × ?% close × ? value = <span class="text-yellow-300">? / week</span>
+          </div>
+        </div>
+        <p class="text-xs text-purple-300 mt-auto">Define operation type first; then anchor value to revenue per conversion.</p>
+      </div>
+
+      <!-- Action nudge -->
+      <div class="rounded-2xl border border-slate-100 bg-slate-900 p-5 col-span-2 flex items-center gap-6">
+        <span class="text-4xl">🎯</span>
+        <div>
+          <h3 class="text-white font-bold text-lg mb-1">Next step to unlock your North Star</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Add a conversion action to the page (contact form, newsletter signup, demo request), then return here with your real traffic numbers to complete this projection.
+          </p>
+        </div>
+        <div class="ml-auto flex flex-col gap-2 text-right shrink-0">
+          <span class="text-slate-500 text-xs">Current WVO</span>
+          <span class="text-3xl font-black text-slate-600">—</span>
+          <span class="text-slate-500 text-xs">No operation defined</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
